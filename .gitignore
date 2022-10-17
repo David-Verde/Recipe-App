@@ -32,3 +32,6 @@
 
 # .gitignore
 node_modules/
+
+# DB config
+/config/database.yml
