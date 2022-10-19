@@ -73,4 +73,24 @@ end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# Rspec gems
+gem 'ffi', group: %i[development test]
+gem 'rails-controller-testing', group: %i[development test]
+gem 'rspec-rails', group: %i[development test]
+
+# Passwords helper gem
+gem 'figaro'
+
+# n+1 problems gem helper
+gem 'bullet', group: 'development'
+
+# Integration Tests
+group :development, :test do
+  gem 'database_cleaner'
+end
+
+# Authentication with Devise
 gem 'devise'
+
+# Authorization widh CanCanCan
+gem 'cancancan'
