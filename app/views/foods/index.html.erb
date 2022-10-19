@@ -2,6 +2,11 @@
 
 <h1>Foods</h1>
 
+<% if user_signed_in? %>
+ <div> <%= current_user.name %> </div>
+ <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+<% end %>
+
 <div id="foods">
   <% @foods.each do |food| %>
     <%= render food %>
