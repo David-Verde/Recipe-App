@@ -90,9 +90,9 @@ Authors
 )
 
 👤 **Jhon Nduati Kagiri**
-https://github.com/NduatiKagiri
-https://www.linkedin.com/in/nduati-kagiri
-https://twitter.com/NduatiKagiri
+- https://github.com/NduatiKagiri
+- https://www.linkedin.com/in/nduati-kagiri
+- https://twitter.com/NduatiKagiri
 
 
 
