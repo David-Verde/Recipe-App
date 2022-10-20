@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  get 'general_shopping_list', to: 'general_shopping_list#index'
 
   resources :recipes
 

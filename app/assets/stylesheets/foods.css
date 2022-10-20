@@ -57,3 +57,24 @@
   width: 100%;
   margin-bottom: 24px;
 }
+
+.shopping h1 {
+  margin-bottom: 24px;
+}
+
+.shopping {
+  width: 100%;
+  padding: 24px 145px;
+}
+
+.shopping .totals {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.shopping .foods-table {
+  width: 100%;
+  padding: 24px 100px;
+}
