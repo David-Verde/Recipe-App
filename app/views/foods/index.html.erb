@@ -1,14 +1,29 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Foods</h1>
+<div class="all-foods">
+  <div class="foods-header">
+    <h1>Foods</h1>
+    <%= link_to "Add New Food", new_food_path, class: "add-food-btn" %>
+  </div>
 
-<div id="foods">
-  <% @foods.each do |food| %>
-    <%= render food %>
-    <p>
-      <%= link_to "Show this food", food %>
-    </p>
-  <% end %>
+  <div id="foods">
+    <table class="foods-table" border="1">
+      <tr>
+        <th>Food</th>
+        <th>Measurement Unit</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+      </tr>
+    <% @foods.each do |food| %>
+      <tr>
+        <td><%= food.name %></td>
+        <td><%= food.measurement_unit %></td>
+        <td><%= food.price %></td>
+        <td><%= food.quantity %></td>
+        <td><%= button_to "Delete", food, method: :delete, class: "delete-food" %></td>
+      </tr>
+    <% end %>
+    </table>
+  </div>
 </div>
-
-<%= link_to "New food", new_food_path %>
