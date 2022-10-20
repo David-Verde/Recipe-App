@@ -1,5 +1,5 @@
 class Food < ApplicationRecord
   belongs_to :user
-  has_many :recipefood, dependent: :destroy
-  has_many :recipes, through: :recipefood
+  has_many :recipe_foods, dependent: :destroy
+  has_many :recipes, through: :recipe_food
 end
