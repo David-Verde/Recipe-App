@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: Recipe_App_development
+  database: Recipe_App
   username: postgres
   password: 5621942
 
@@ -34,7 +34,7 @@ development:
   username: postgres
 
   # The password associated with the postgres role (username).
-  password: Nduati7176Kagiri
+  password: 5621942
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
