@@ -8,18 +8,16 @@
 
 <div class="recipe-details">
 
-<%= render 'recipe-show' %>
+  <%= render 'recipe-show' %>
 
-<div class="generate-add-buttons">
-<%= button_to "Generate shopping list", class: 'delete-btn'%>
-<%= button_to "Add ingredient", class: 'delete-btn'%>
-</div>
+  <div class="generate-add-buttons">
+    <%= button_to "Add ingredient", class: 'delete-btn'%>
+  </div>
 
-<hr>
+  <hr>
 
-<div>
-  <%= button_to "Delete this recipe", @recipe, method: :delete %> |
-  <%= link_to "Back to recipes", recipes_path %>
-
+  <div>
+    <%= button_to "Delete this recipe", @recipe, method: :delete %> |
+    <%= link_to "Back to recipes", recipes_path %>
   </div>
 </div>
