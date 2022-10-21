@@ -68,6 +68,11 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    appmap (0.93.3)
+      activesupport
+      method_source
+      rack
+      reverse_markdown
     ast (2.4.2)
     bcrypt (3.1.18)
     bindex (0.8.1)
@@ -196,6 +201,8 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    reverse_markdown (2.1.1)
+      nokogiri
     rexml (3.2.5)
     rspec-core (3.11.0)
       rspec-support (~> 3.11.0)
@@ -277,6 +284,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  appmap
   bootsnap
   bullet
   cancancan
