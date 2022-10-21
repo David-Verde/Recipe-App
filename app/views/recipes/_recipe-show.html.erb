@@ -30,13 +30,13 @@
     <%= @recipe.description %>
   </p>
 
-  
+
   <div class="d-flex justify-content-between">
-    <%= link_to 'Generate Shopping List', recipe_shopping_list_path(@recipe), class: 'btn btn-secondary' %>
-      <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'btn btn-success' %>
-      <%= link_to 'Edit', edit_recipe_path(@recipe), class: 'btn btn-primary' %>
-      <%= link_to 'Back', recipes_path, class: 'btn btn-secondary' %>
-      <%= button_to 'Delete', recipe_path(@recipe), method: :delete, class: 'btn btn-danger' %>
+    <%= link_to "General shopping list", general_shopping_list_path, class: 'btn btn-secondary'%>
+    <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'btn btn-success' %>
+    <%= link_to 'Edit', edit_recipe_path(@recipe), class: 'btn btn-primary' %>
+    <%= link_to 'Back', recipes_path, class: 'btn btn-secondary' %>
+    <%= button_to 'Delete', recipe_path(@recipe), method: :delete, class: 'btn btn-danger' %>
   </div>
   <%= render 'shared/food_table' do %>
     <%= render @recipe_foods %>

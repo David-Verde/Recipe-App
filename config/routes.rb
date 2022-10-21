@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :foods
-  
+
   resources :recipes do
     resources :recipe_foods
     get '/add_food/', to: 'recipe_foods#add_food'
@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Root for the Shoping list
-  get '/general_shopping_list', to: 'foods#general_shopping_list'
+  get '/general_shopping_list', to: 'general_shopping_list#index'
 
   # Defines the root path route ("/")
   root "recipes#public_recipes"
