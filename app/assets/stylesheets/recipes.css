@@ -44,6 +44,15 @@
   margin-right: 20%;
 }
 
+.delete-btn {
+  border: 2px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(241, 237, 241);
+  color: black;
+  text-decoration: none;
+}
+
 /* Style for public button from here */
 
 /* The switch - the box around the slider */
@@ -87,11 +96,11 @@
 }
 
 input:checked + .slider {
-  background-color: #099410;
+  background-color: #095894;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px  #099410;
+  box-shadow: 0 0 1px  #094194;
 }
 
 input:checked + .slider::before {

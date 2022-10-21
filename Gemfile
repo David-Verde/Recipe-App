@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
+
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+# This must be the first gem listed
+gem 'appmap', groups: %i[development test]
 
 ruby '3.1.2'
 
