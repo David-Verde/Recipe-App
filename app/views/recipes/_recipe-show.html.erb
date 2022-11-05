@@ -1,0 +1,44 @@
+<div>
+
+
+<div class="recipe-card">
+
+<div>
+  <p>
+    <strong>Preparation time (min):</strong>
+    <%= @recipe.preparation_time %>
+  </p>
+
+  <p>
+    <strong>Cooking time (min):</strong>
+    <%= @recipe.cooking_time %>
+  </p>
+</div>
+
+<p>
+    <strong>Public:</strong>
+    <label class="switch">
+      <input type="checkbox" role="switch" <%= 'checked' if @recipe.public %> disabled>
+      <span class="slider round"></span>
+    </label>
+  </p>
+
+</div>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @recipe.description %>
+  </p>
+
+
+  <div class="d-flex justify-content-between">
+    <%= link_to "General shopping list", general_shopping_list_path, class: 'btn btn-secondary'%>
+    <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'btn btn-success' %>
+    <%= link_to 'Edit', edit_recipe_path(@recipe), class: 'btn btn-primary' %>
+    <%= link_to 'Back', recipes_path, class: 'btn btn-secondary' %>
+    <%= button_to 'Delete', recipe_path(@recipe), method: :delete, class: 'btn btn-danger' %>
+  </div>
+  <%= render 'shared/food_table' do %>
+    <%= render @recipe_foods %>
+  <% end %>
+</div>

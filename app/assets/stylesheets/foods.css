@@ -1,0 +1,80 @@
+.all-foods {
+  width: 100%;
+  padding: 24px 145px;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-foods .foods-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.all-foods #foods {
+  width: 100%;
+  padding: 10px 60px;
+}
+
+.all-foods #foods table {
+  width: 100%;
+  border-spacing: 30px;
+}
+
+.foods-table tr {
+  height: 40px;
+}
+
+.foods-table tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.foods-table tr th,
+.foods-table tr td {
+  padding: 0 10px;
+}
+
+.add-food-btn {
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foods-table tr td .delete-food {
+  border: none;
+  background: transparent;
+}
+
+.new-food {
+  width: 100%;
+  padding: 24px 245px;
+}
+
+.new-food div {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.shopping h1 {
+  margin-bottom: 24px;
+}
+
+.shopping {
+  width: 100%;
+  padding: 24px 145px;
+}
+
+.shopping .totals {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.shopping .foods-table {
+  width: 100%;
+  padding: 24px 100px;
+}
